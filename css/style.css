@@ -367,6 +367,23 @@ body {
   padding-bottom: 20px;
   padding-left: 19px;
 }
+.footer-container {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding: var(--padding-30);
+  background-color: var(--main-bg-color);
+  gap: var(--padding-50);
+
+  ul {
+    list-style: none;
+    flex: 1;
+  }
+  li {
+    line-height: 2;
+    font-size: 18px;
+  }
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -497,6 +514,9 @@ body {
   .activities-container__cards-container a {
     flex: unset;
     width: calc(50% - var(--radius-15));
+  }
+  .footer-container {
+    flex-direction: row;
   }
 }
 @media (min-width: 376px) {
