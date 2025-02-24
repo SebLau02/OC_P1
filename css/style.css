@@ -42,7 +42,8 @@ a {
   border-radius: var(--padding-20);
   box-shadow: 0px 3px 15px 0px #0000001a;
 }
-.lodges-card .card__img-box {
+.lodges-card .card__img-box,
+.activities-container__cards-container__cards .card__img-box {
   overflow: hidden;
   border-top-left-radius: var(--padding-20);
   border-top-right-radius: var(--padding-20);
@@ -277,6 +278,7 @@ body {
   gap: 15px;
   width: 100%;
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 .populars-container {
   padding: var(--padding-30) var(--padding-20);
@@ -286,10 +288,8 @@ body {
   padding: var(--padding-30) var(--padding-20);
 }
 .lodges-container__see-more {
-  display: none;
   font-weight: 700;
   font-size: 18px;
-  margin-top: 30px;
 }
 .populars-container__title {
   display: flex;
@@ -338,6 +338,35 @@ body {
   margin-bottom: 5px;
 }
 
+/********* Activities *************/
+
+.activities-container {
+  padding: var(--padding-30);
+}
+.activities-container__cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: var(--radius-15);
+  margin-top: var(--padding-30);
+}
+.activities-container__cards-container a {
+  flex: 1;
+}
+.activities-container__cards-container__cards {
+  height: 200px;
+  border-radius: var(--padding-20);
+  box-shadow: 0px 3px 15px 0px #0000001a;
+}
+.activities-container__cards-container__cards .card__img-box {
+  border-width: 0;
+}
+.activities-container__cards-container__cards h3 {
+  padding-top: 20px;
+  padding-right: 19px;
+  padding-bottom: 20px;
+  padding-left: 19px;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -383,6 +412,19 @@ body {
   .populars-container__cards-container {
     gap: var(--padding-20);
   }
+  .activities-container__cards-container {
+    gap: var(--padding-30);
+  }
+  .activities-container__cards-container a {
+    flex: 1 !important;
+  }
+  .activities-container__cards-container__cards {
+    height: 270px;
+  }
+  .activities-container__cards-container__cards .card__img-box {
+    height: 200px;
+    border-width: 0;
+  }
 }
 @media (min-width: 1440px) {
   .populars-lodges-container {
@@ -400,6 +442,13 @@ body {
   }
   .populars-container__cards-container {
     gap: var(--padding-30);
+  }
+  .activities-container__cards-container__cards {
+    height: 439px;
+  }
+  .activities-container__cards-container__cards .card__img-box {
+    height: 380px;
+    border-width: 0;
   }
 }
 @media (min-width: 425px) {
@@ -440,6 +489,14 @@ body {
   }
   .populars-lodges-container {
     gap: var(--padding-50);
+  }
+  .activities-container__cards-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .activities-container__cards-container a {
+    flex: unset;
+    width: calc(50% - var(--radius-15));
   }
 }
 @media (min-width: 376px) {
