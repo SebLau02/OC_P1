@@ -54,6 +54,7 @@ a {
   gap: 8px;
   padding: 0 15px;
   margin-top: 4px;
+  margin-bottom: 15px;
 }
 .card {
   display: grid;
@@ -256,6 +257,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+.populars-lodges-container a {
+  width: 100%;
 }
 .populars-container {
   display: flex;
