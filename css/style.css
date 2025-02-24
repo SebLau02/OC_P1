@@ -237,8 +237,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
-.main-g-container__tool-bar__filters-filters button.active {
+.main-g-container__tool-bar__filters-filters button:hover {
   background-color: #deebff;
 }
 .main-g-container__tool-bar__filters-filters button i {
