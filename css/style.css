@@ -31,14 +31,11 @@ a {
   text-decoration: none;
 }
 
-.section-title {
-  margin: 0;
-  font-size: 22px;
-}
 .lodges-card {
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: white;
   border-radius: var(--padding-20);
   box-shadow: 0px 3px 15px 0px #0000001a;
 }
@@ -109,7 +106,7 @@ body {
   font-size: 22px;
   font-weight: 700;
 }
-.star-disable {
+.star-disabled {
   color: var(--main-bg-color);
 }
 /****** Header ***********/
@@ -258,6 +255,9 @@ body {
   width: 24px;
   height: 24px;
   margin-right: 10px;
+}
+.main-g-container__tool-bar__info span i {
+  font-size: 10px;
 }
 
 /****** Hebergements And Populaires ***********/
