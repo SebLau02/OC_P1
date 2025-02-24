@@ -375,15 +375,14 @@ body {
   padding: var(--padding-30);
   background-color: var(--main-bg-color);
   gap: var(--padding-50);
-
-  ul {
-    list-style: none;
-    flex: 1;
-  }
-  li {
-    line-height: 2;
-    font-size: 18px;
-  }
+}
+.footer-container ul {
+  list-style: none;
+  flex: 1;
+}
+.footer-container li {
+  line-height: 2;
+  font-size: 18px;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
