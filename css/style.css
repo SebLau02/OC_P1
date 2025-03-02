@@ -9,8 +9,9 @@
 * {
   font-family: "Raleway", sans-serif;
 }
-button{
+button {
   cursor: pointer;
+}
 :root {
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
@@ -235,7 +236,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 .main-g-container__tool-bar__filters-filters button:hover {
   background-color: #deebff;
