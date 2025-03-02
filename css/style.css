@@ -9,7 +9,8 @@
 * {
   font-family: "Raleway", sans-serif;
 }
-
+button{
+  cursor: pointer;
 :root {
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
